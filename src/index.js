@@ -1,11 +1,12 @@
 import React from "react";
+import ReactDOM from "react-dom/client";
 import ColorProvider from "./color-hooks.js";
-import { render } from "react-dom";
 import App from "./App.js";
 
-render(
+const root = ReactDOM.createRoot(document.getElementById("root"));
+
+root.render(
   <ColorProvider>
     <App />
-  </ColorProvider>,
-  document.getElementById("root")
+  </ColorProvider>
 );

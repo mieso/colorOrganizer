@@ -1,19 +1,19 @@
 [
     {
         "id": "1",
-        "title": "ocean o zmierzchu",
+        "title": "niebieski",
         "color": "#00c4e2",
         "rating": 5
     },
     {
         "id": "2",
-        "title": "zielony trawnik",
+        "title": "zielony",
         "color": "#26ac56",
         "rating": 3
     },
     {
         "id": "3",
-        "title": "jasna czerwień",
+        "title": "czerwony",
         "color": "#ff0000",
         "rating": 0
     }
