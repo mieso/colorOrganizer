@@ -2,19 +2,19 @@
     {
         "id": "1",
         "title": "niebieski",
-        "color": "#00c4e2",
+        "color": "#2B83A3",
         "rating": 5
     },
     {
         "id": "2",
         "title": "zielony",
-        "color": "#26ac56",
+        "color": "#57A27C",
         "rating": 3
     },
     {
         "id": "3",
         "title": "czerwony",
-        "color": "#ff0000",
+        "color": "#8A0D0A",
         "rating": 0
     }
 ]

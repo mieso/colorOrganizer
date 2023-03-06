@@ -21,7 +21,7 @@ export default function ReducerExample2() {
     );
 
     return (
-        <div>
+        <div style={{ "marginBottom": "50px" }}>
             <h1>
                 {user.firstName} {user.lastName} - {user.admin ? "Admin" : "User"}
             </h1>
