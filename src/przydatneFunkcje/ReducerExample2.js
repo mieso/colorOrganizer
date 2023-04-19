@@ -12,8 +12,6 @@ const firstUser = {
     admin: false
 }
 
-
-
 export default function ReducerExample2() {
     const [user, setUser] = useReducer(
         (user, newDetails) => ({ ...user, ...newDetails }),
@@ -21,7 +19,7 @@ export default function ReducerExample2() {
     );
 
     return (
-        <div style={{ "marginBottom": "50px" }}>
+        <div style={{ marginBottom: "50px", marginTop: "100px"}}>
             <h1>
                 {user.firstName} {user.lastName} - {user.admin ? "Admin" : "User"}
             </h1>
