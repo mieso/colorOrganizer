@@ -1,17 +1,20 @@
-import React, { useState, useEffect } from "react";
+// import React, { useState, useEffect } from "react";
 import { useFetch } from "../hooks.js";
+import Fetch from "./Fetch";
 
-export default function GitHubUser({ login }) {
-    const { loading, data, error } = useFetch(
-        `https://api.github.com/users/${login}`
-    )
 
-    if (loading) return <h1>Wczytywanie...</h1>;
-    if (error)
-        return <pre>{JSON.stringify(error, null, 2)}</pre>;
-
+export default function GitHubUser({ value }) {
     return (
-        <div className="githubUser" style={{ marginTop: "100px" }}>
+        <Fetch
+            uri={`https://api.github.com/users/${value}`}
+            renderSuccess={UserDetails}
+        />
+    );
+}
+
+function UserDetails({ data }) {
+    return (
+        <div className="githubUser">
             <img
                 src={data.avatar_url}
                 alt={data.login}
@@ -25,6 +28,11 @@ export default function GitHubUser({ login }) {
         </div>
     );
 }
+
+
+
+
+
 
 
 

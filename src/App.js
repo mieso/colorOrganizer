@@ -4,7 +4,7 @@ import AddColorForm from "./AddColorForm.js";
 import Checkbox from "./przydatneFunkcje/Checkbox";
 import ReducerExample1 from "./przydatneFunkcje/ReducerExample1";
 import ReducerExample2 from "./przydatneFunkcje/ReducerExample2";
-import GitHubUser from "./przydatneFunkcje/ManipulacjaDanymi";
+import UserSearch from "./UserSearch";
 import List from "./przydatneFunkcje/GenerowaneWlasciwosci";
 // import tahoe_peaks from "./tahoe_peaks.json";
 
@@ -16,7 +16,7 @@ export default function App() {
       <Checkbox />
       <ReducerExample1 />
       <ReducerExample2 />
-      <GitHubUser login="mieso" />
+      <UserSearch />
       <List />
       {/* <List
         data={tahoe_peaks}
